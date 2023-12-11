@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
 
 import Constants from "expo-constants";
 import colors from "../config/colors";
@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
   view: {
     flex: 1,
     alignItems: "center",
+    justifyContent: "flex-start",
     paddingTop: Constants.statusBarHeight + 10,
     paddingHorizontal: 30,
     paddingBottom: 10,

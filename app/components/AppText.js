@@ -2,8 +2,12 @@ import React from "react";
 import { Text, StyleSheet, Platform } from "react-native";
 import textStyle from "../config/textStyle";
 
-function AppText({ children, style }) {
-  return <Text style={[styles.text, style]}>{children}</Text>;
+function AppText({ children, style, ...props }) {
+  return (
+    <Text style={[styles.text, style]} {...props}>
+      {children}
+    </Text>
+  );
 }
 
 const styles = StyleSheet.create({

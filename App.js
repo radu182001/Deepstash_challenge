@@ -1,22 +1,5 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import colors from "./app/config/colors";
-import AppView from "./app/components/AppView";
-import SearchBar from "./app/components/SearchBar";
+import SearchScreen from "./app/screens/SearchScreen";
 
 export default function App() {
-  return (
-    <AppView>
-      <SearchBar />
-    </AppView>
-  );
+  return <SearchScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.background,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
